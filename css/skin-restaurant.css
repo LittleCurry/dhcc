@@ -1508,7 +1508,7 @@ body,
 .full-width-slider,
 .parallax{
 	height: 60rem;
-	padding: 0;
+	/* padding: 0; */
 }
 .window-height{
 	height: 100vh;
