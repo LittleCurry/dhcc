@@ -1,0 +1,124 @@
+<!--E-mail：1141869607@qq.com-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block
+        }
+
+        .list-img-suit {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        .list-img-suit .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            /*height: 150px;*/
+            min-height: 150px;
+            overflow: hidden;
+            margin-left: 3.5%;
+            margin-bottom: 3.5%;
+            flex-direction: column;
+            text-decoration:none
+        }
+
+        .list-img-suit .item img {
+            height: 60%;
+            min-height: 80px;
+        }
+
+        .list-img-suit .item .video-title {
+            font-size: 14px;
+            color: #00aced;
+        }
+
+        .list-img-suit .item .video-date {
+            font-size: 12px;
+            color: #4e4e4d;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="list-img-suit" id="imgList">
+        <a class="item" href="http://dhjhsp.com/file_server/file?file_name=chen.mp4">
+            <img src="http://dhjhsp.com/file_server/file?file_name=chen.jpg" class="item-img" alt="">
+            <span class="video-title">用生命参与敬拜服事 -- 陈迦南</span>
+            <span class="video-date">2020-11-14</span>
+        </a>
+        <a class="item" href="http://dhjhsp.com/file_server/file?file_name=chen.mp4">
+            <img src="http://dhjhsp.com/file_server/file?file_name=chen.jpg" class="item-img" alt="">
+            <span class="video-title">用生命参与敬拜服事(2) -- 陈迦南</span>
+            <span class="video-date">2020-11-14</span>
+        </a>
+        <!--<a class="item" href="http://dhjhsp.com/file_server/file?file_name=chen.mp4">-->
+            <!--<img src="http://dhjhsp.com/file_server/file?file_name=chen.jpg" class="item-img" alt="">-->
+            <!--<span class="video-title">用生命参与敬拜服事 &#45;&#45; 陈迦南</span>-->
+            <!--<span class="video-date">2020-11-14</span>-->
+        <!--</a>-->
+        <!--<a class="item" href="http://dhjhsp.com/file_server/file?file_name=chen.mp4">-->
+            <!--<img src="http://dhjhsp.com/file_server/file?file_name=chen.jpg" class="item-img" alt="">-->
+            <!--<span class="video-title">用生命参与敬拜服事 &#45;&#45; 陈迦南</span>-->
+            <!--<span class="video-date">2020-11-14</span>-->
+        <!--</a>-->
+        <!--<a class="item" href="http://dhjhsp.com/file_server/file?file_name=chen.mp4">-->
+            <!--<img src="http://dhjhsp.com/file_server/file?file_name=chen.jpg" class="item-img" alt="">-->
+            <!--<span class="video-title">用生命参与敬拜服事 &#45;&#45; 陈迦南</span>-->
+            <!--<span class="video-date">2020-11-14</span>-->
+        </a>
+    </div>
+</div>
+
+<script>
+    // 当页面载入完毕后执行，注：为了能正常获取到img尺寸的写法
+    window.onload = function () {
+        var id = 'imgList' // 模块id
+        boxImgSuit(id)
+    };
+
+    // 图片自适应盒子，参数为列表id
+    function boxImgSuit(id) {
+        var img = document.getElementById(id).getElementsByClassName('item') // 获取doc
+        for (var i = 0; i < img.length; i++) {
+            var imgHtml = img[i].getElementsByClassName('item-img')[0] // 获取到图片
+            var imgHeight = imgHtml.height // 获取到图片高度
+            var imgWidth = imgHtml.width // 获取图片宽度
+            img[i].style.height = img[i].offsetWidth + 'px' // 配置盒子高度
+            var itemHeight = img[i].offsetHeight // 获取图片盒子的高度
+            var itemWidth = img[i].offsetWidth // 获取图片盒子宽度
+
+            if (imgWidth > imgHeight) { // 判断图片宽度是否大于高度
+                imgHtml.height = itemHeight // 给图片高度 100%
+            } else if (imgWidth < imgHeight) { // 判断图片宽度是否小于高度
+                imgHtml.width = itemWidth // 给图片宽度 100%
+            } else { // 图片是正方形
+                imgHtml.height = itemHeight // 给图片高度 100%
+                imgHtml.width = itemWidth // 给图片宽度 100%
+            }
+        }
+        // 监听窗口变化
+        window.onresize = function () {
+            boxImgSuit(id)
+        }
+    }
+
+</script>
+</body>
+</html>
