@@ -40,28 +40,28 @@
     ],
     "feilibi": [
       {
-        "name": "腓立比书系列之一——生命中的两件大事（一）",
+        "name": "腓立比书系列之一",
         "cover": "http://bhhz.net/file_server/file?file_name=腓立比书系列之一——生命中的两件大事（一）.jpg",
         "url": "http://bhhz.net/file_server/file?file_name=腓立比书系列之一——生命中的两件大事（一）.mp4",
-        "date": ""
+        "date": "生命中的两件大事（一）"
       },
       {
-        "name": "腓立比书系列之二——生命中的两件大事（二）",
+        "name": "腓立比书系列之二",
         "cover": "http://bhhz.net/file_server/file?file_name=腓立比书系列之二——生命中的两件大事（二）.jpg",
         "url": "http://bhhz.net/file_server/file?file_name=腓立比书系列之二——生命中的两件大事（二）.mp4",
-        "date": ""
+        "date": "生命中的两件大事（二）"
       },
       {
-        "name": "腓立比书系列之三——基督徒的生死观",
+        "name": "腓立比书系列之三",
         "cover": "http://bhhz.net/file_server/file?file_name=腓立比书系列之三——基督徒的生死观.jpg",
         "url": "http://bhhz.net/file_server/file?file_name=腓立比书系列之三——基督徒的生死观.mp4",
-        "date": ""
+        "date": "基督徒的生死观"
       },
       {
-        "name": "腓立比书系列之四——基督徒的合一",
+        "name": "腓立比书系列之四",
         "cover": "http://bhhz.net/file_server/file?file_name=腓立比书系列之四——基督徒的合一.jpg",
         "url": "http://bhhz.net/file_server/file?file_name=腓立比书系列之四——基督徒的合一.mp4",
-        "date": ""
+        "date": "基督徒的合一"
       }
     ]
   },
