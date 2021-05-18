@@ -26,13 +26,12 @@
 
         .list-img-suit .item {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 20%;
-            min-height: 150px;
+            justify-content: left;
+            width: 100%;
+            height: 20px;
             overflow: hidden;
             margin-left: 3.5%;
-            margin-bottom: 3.5%;
+            margin-bottom: 5px;
             flex-direction: column;
             text-decoration: none
         }
@@ -97,12 +96,7 @@
                         openAudio(url)
                     }
                     table.appendChild(a);
-                    // var img = document.createElement('img');
-                    // img.src = jsonArr[i].cover
-                    // img.className = 'item-img'
-                    // // img.style.cssText = "height: 60%;min-height: 80px; display: block; margin: 0;padding: 0;box-sizing: border-box"
-                    // a.appendChild(img);
-                    var span1 = document.createElement('span');
+                    var span1 = document.createElement('u');
                     span1.textContent = jsonArr[i].name
                     span1.className = 'video-title'
                     a.appendChild(span1);
@@ -111,8 +105,8 @@
                     span2.textContent = jsonArr[i].date;
                     a.appendChild(span2);
                 }
-                var id = 'imgList' // 模块id
-                boxImgSuit(id)
+                var id = 'imgList'
+                // boxImgSuit(id)
             }
         }
 
@@ -141,13 +135,13 @@
         }
         // 监听窗口变化
         window.onresize = function () {
-            boxImgSuit(id)
+            // boxImgSuit(id)
         }
     }
 
     function openAudio(src) {
         var page = window.open();
-        var html = "<body style='background:black'> <div style='width:100%; height: 100%;'> <embed controls controlslist='nodownload' width='100%' height='100%' autoplay src='" + src + "'></div></body>"
+        var html = "<body style='background:black'> <div style='width:100%; height: 100%;display: flex;align-items: center; justify-content: center;'> <audio controls controlslist='nodownload'  width='100%' height='100%' autoplay src='" + src + "'></div></body>"
         page.document.write(html);
     }
 
