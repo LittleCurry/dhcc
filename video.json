@@ -59,8 +59,110 @@
       },
       {
         "name": "腓立比书系列之四",
-        "cover": "http://bhhz.net/file_server/file?file_name=腓立比书系列之四——基督徒的合一.jpg",
-        "url": "http://bhhz.net/file_server/file?file_name=腓立比书系列之四——基督徒的合一.mp4",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比5.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比5.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之六",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比6.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比6.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之七",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比7.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比7.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之八",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比八.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比八.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之九",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比9.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比9.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比10.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比10.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十一",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比11.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比11.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十二",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比12.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比12.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十三",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比13.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比13.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十四",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比14.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比14.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十五",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比15.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比15.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十六",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比16.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比16.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十七",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比17.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比17.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十八",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比18.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比18.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之十九",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比19.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比19.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之二十",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比20.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比20.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之二十一",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比21.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比21.mp4",
+        "date": ""
+      },
+      {
+        "name": "腓立比书系列之二十二",
+        "cover": "http://bhhz.net/file_server/file?file_name=腓立比22.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=腓立比22.mp4",
         "date": ""
       }
     ]
@@ -116,8 +218,49 @@
         "cover": "http://bhhz.net/file_server/file?file_name=在主爱中得以完全.jpg",
         "url": "http://bhhz.net/file_server/file?file_name=在主爱中得以完全.mp4",
         "date": ""
+      },
+      {
+        "name": "陈弟兄",
+        "cover": "http://bhhz.net/file_server/file?file_name=陈弟兄1.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=陈弟兄1.mp4",
+        "date": ""
+      },
+      {
+        "name": "李弟兄",
+        "cover": "http://bhhz.net/file_server/file?file_name=李弟兄1.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=李弟兄1.mp4",
+        "date": ""
+      },
+      {
+        "name": "吴弟兄夫妇",
+        "cover": "http://bhhz.net/file_server/file?file_name=吴弟兄夫妇2.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=吴弟兄夫妇2.mp4",
+        "date": ""
+      },
+      {
+        "name": "张弟兄",
+        "cover": "http://bhhz.net/file_server/file?file_name=张弟兄3.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=张弟兄3.mp4",
+        "date": ""
+      },
+      {
+        "name": "祝姊妹",
+        "cover": "http://bhhz.net/file_server/file?file_name=祝姊妹4.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=祝姊妹4.mp4",
+        "date": ""
+      },
+      {
+        "name": "王弟兄夫妇",
+        "cover": "http://bhhz.net/file_server/file?file_name=王弟兄夫妇5.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=王弟兄夫妇5.mp4",
+        "date": ""
+      },
+      {
+        "name": "王弟兄庆姊妹夫妇",
+        "cover": "http://bhhz.net/file_server/file?file_name=王弟兄庆姊妹夫妇6.jpg",
+        "url": "http://bhhz.net/file_server/file?file_name=王弟兄庆姊妹夫妇6.mp4",
+        "date": ""
       }
-
     ]
   }
 }
