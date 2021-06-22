@@ -2,119 +2,104 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>百合花中</title>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百合花中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		img {
-			display: block
-		}
+        img {
+            display: block
+        }
 
-		.list-img-suit {
-			display: flex;
-			flex-wrap: wrap;
-			padding: 15px;
-		}
+        .list-img-suit {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
 
-		.list-img-suit .item {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 20%;
-			/*height: 150px;*/
-			min-height: 150px;
-			overflow: hidden;
-			margin-left: 3.5%;
-			margin-bottom: 3.5%;
-			flex-direction: column;
-			text-decoration:none
-		}
+        .list-img-suit .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            /*height: 150px;*/
+            min-height: 150px;
+            overflow: hidden;
+            margin-left: 3.5%;
+            margin-bottom: 3.5%;
+            flex-direction: column;
+            text-decoration: none
+        }
 
-		.list-img-suit .item img {
-			height: 60%;
-			min-height: 80px;
-		}
+        .list-img-suit .item img {
+            height: 60%;
+            min-height: 80px;
+        }
 
-		.list-img-suit .item .video-title {
-			font-size: 14px;
-			color: #00aced;
-		}
+        .list-img-suit .item .video-title {
+            font-size: 14px;
+            color: #00aced;
+        }
 
-		.list-img-suit .item .video-date {
-			font-size: 12px;
-			color: #4e4e4d;
-		}
+        .list-img-suit .item .video-date {
+            font-size: 12px;
+            color: #4e4e4d;
+        }
 
-	</style>
+    </style>
 </head>
 <body>
 <div>
-	<div class="list-img-suit" id="imgList">
-		<!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200412讲道.mp4">-->
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200412讲道.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=20200412讲道.jpg" class="item-img" alt="">
-			<span class="video-title">面对基督复活的三种人</span>
-			<span class="video-date">2020-04-12</span>
-		</a>
-		<!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200503讲道.mp4">-->
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200503讲道.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=20200503讲道.jpg" class="item-img" alt="">
-			<span class="video-title">祭坛的人生</span>
-			<span class="video-date">2020-05-03</span>
-		</a>
-		<!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200510讲道.mp4">-->
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200510讲道.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=20200510讲道.jpg" class="item-img" alt="">
-			<span class="video-title">令人向往的教会</span>
-			<span class="video-date">2020-05-10</span>
-		</a>
-		<!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200514讲道.mp4">-->
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200514讲道.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=20200514讲道.jpg" class="item-img" alt="">
-			<span class="video-title">父母对子女的影响</span>
-			<span class="video-date">2020-05-14</span>
-		</a>
-		<!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200517讲道.mp4">-->
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200517讲道.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=20200517讲道.jpg" class="item-img" alt="">
-			<span class="video-title">帐篷的人生</span>
-			<span class="video-date">2020-05-17</span>
-		</a>
-		<!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200524讲道.mp4">-->
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200524讲道.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=20200524讲道.jpg" class="item-img" alt="">
-			<span class="video-title">安息的生命</span>
-			<span class="video-date">2020-05-24</span>
-		</a>
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=腓立比书系列之一——生命中的两件大事（一）.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=腓立比书系列之一——生命中的两件大事（一）.jpg" class="item-img" alt="">
-			<span class="video-title">腓立比书系列之一——生命中的两件大事（一）</span>
-			<span class="video-date"></span>
-		</a>
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=腓立比书系列之二——生命中的两件大事（二）.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=腓立比书系列之二——生命中的两件大事（二）.jpg" class="item-img" alt="">
-			<span class="video-title">腓立比书系列之二——生命中的两件大事（二）</span>
-			<span class="video-date"></span>
-		</a>
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=腓立比书系列之三——基督徒的生死观.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=腓立比书系列之三——基督徒的生死观.jpg" class="item-img" alt="">
-			<span class="video-title">腓立比书系列之三——基督徒的生死观</span>
-			<span class="video-date"></span>
-		</a>
-		<a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=腓立比书系列之四——基督徒的合一.mp4')">
-			<img src="http://bhhz.net/file_server/file?file_name=腓立比书系列之四——基督徒的合一.jpg" class="item-img" alt="">
-			<span class="video-title">腓立比书系列之四——基督徒的合一</span>
-			<span class="video-date"></span>
-		</a>
-	</div>
+    <div class="list-img-suit" id="imgList">
+        <!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200412讲道.mp4">-->
+        <a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200412讲道.mp4')">
+            <img src="http://bhhz.net/file_server/file?file_name=20200412讲道.jpg" class="item-img" alt="">
+            <span class="video-title">面对基督复活的三种人</span>
+            <span class="video-date">2020-04-12</span>
+        </a>
+        <!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200503讲道.mp4">-->
+        <a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200503讲道.mp4')">
+            <img src="http://bhhz.net/file_server/file?file_name=20200503讲道.jpg" class="item-img" alt="">
+            <span class="video-title">祭坛的人生</span>
+            <span class="video-date">2020-05-03</span>
+        </a>
+        <!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200510讲道.mp4">-->
+        <a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200510讲道.mp4')">
+            <img src="http://bhhz.net/file_server/file?file_name=20200510讲道.jpg" class="item-img" alt="">
+            <span class="video-title">令人向往的教会</span>
+            <span class="video-date">2020-05-10</span>
+        </a>
+        <!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200514讲道.mp4">-->
+        <a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200514讲道.mp4')">
+            <img src="http://bhhz.net/file_server/file?file_name=20200514讲道.jpg" class="item-img" alt="">
+            <span class="video-title">父母对子女的影响</span>
+            <span class="video-date">2020-05-14</span>
+        </a>
+        <!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200517讲道.mp4">-->
+        <a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200517讲道.mp4')">
+            <img src="http://bhhz.net/file_server/file?file_name=20200517讲道.jpg" class="item-img" alt="">
+            <span class="video-title">帐篷的人生</span>
+            <span class="video-date">2020-05-17</span>
+        </a>
+        <!--<a class="item" href="http://bhhz.net/file_server/file?file_name=20200524讲道.mp4">-->
+        <a class="item" onclick="openVideo('http://bhhz.net/file_server/file?file_name=20200524讲道.mp4')">
+            <img src="http://bhhz.net/file_server/file?file_name=20200524讲道.jpg" class="item-img" alt="">
+            <span class="video-title">安息的生命</span>
+            <span class="video-date">2020-05-24</span>
+        </a>
+        <a class="item" href="video_list.html?page=preaching&tag=feilibi">
+            <img src="http://bhhz.net/file_server/file?file_name=feilibi.jpg" class="item-img"/>
+            <span class="video-title">腓立比书</span>
+            <span class="video-date">.</span>
+        </a>
+    </div>
 </div>
 
 <script>
@@ -152,7 +137,7 @@
 
     function openVideo(src) {
         var page = window.open();
-        var html="<body style='background:black'> <div style='width:100%; height: 100%;'> <video controls controlslist='nodownload' width='100%' height='100%' autoplay src='"+src+ "'></video></div></body>"
+        var html = "<body style='background:black'> <div style='width:100%; height: 100%;'> <video controls controlslist='nodownload' width='100%' height='100%' autoplay src='" + src + "'></video></div></body>"
         page.document.write(html);
     }
 
