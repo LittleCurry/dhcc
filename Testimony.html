@@ -1,0 +1,214 @@
+<!--E-mail：1141869607@qq.com-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+	<title>百合花中</title>
+	<link rel="stylesheet" href="css/core.min.css"/>
+	<link rel="stylesheet" href="css/skin.css"/>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		img {
+			display: block
+		}
+
+		.list-img-suit {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 15px;
+		}
+
+		.list-img-suit .item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 20%;
+			/*height: 150px;*/
+			min-height: 150px;
+			overflow: hidden;
+			margin-left: 3.5%;
+			margin-bottom: 3.5%;
+			flex-direction: column;
+			text-decoration: none
+		}
+
+		.list-img-suit .item img {
+			height: 60%;
+			min-height: 80px;
+		}
+
+		.list-img-suit .item .video-title {
+			font-size: 14px;
+			color: #00aced;
+		}
+
+		.list-img-suit .item .video-date {
+			font-size: 12px;
+			color: #4e4e4d;
+		}
+
+	</style>
+</head>
+<body>
+
+<div style="height: 80px">
+	<img src="images/header.jpg" style="height: 100%; weight:100%">
+</div>
+<div style="height: 40px; background: rgba(0,0,0, 0.05);display: flex;align-items: center;">
+    <a href="index.html">
+        <button style="width: 110px; background: rgba(0,0,0,0); color: rgba(0,0,0,0.5); margin-top: 10px;border: none;">首页</button>
+    </a>
+    <span style="color: rgba(0,0,0,0.5);margin-top: -5px;">|</span>
+    <a href="Preaching.html">
+        <button style="width: 110px; background: rgba(0,0,0,0); color: rgba(0,0,0,0.5); margin-top: 10px;border: none;">主日信息</button>
+    </a>
+    <span style="color: rgba(0,0,0,0.5);margin-top: -5px;">|</span>
+	<a href="Testimony.html">
+		<button style="width: 110px;background: rgba(0,0,0,0);font-weight:bold; font-size: 15px; color: rgba(0,0,0,1); margin-top: 10px;border: none;">生命见证</button>
+    </a>
+	<span style="color: rgba(0,0,0,0.5);margin-top: -5px;">|</span>
+	<a href="Subject.html">
+        <button style="width: 110px;background: rgba(0,0,0,0);color: rgba(0,0,0,0.5); margin-top: 10px;border: none;">专题讲座</button>
+    </a>
+    <span style="color: rgba(0,0,0,0.5);margin-top: -5px;">|</span>
+    <a href="Praise.html">
+        <button style="width: 110px;background: rgba(0,0,0,0);color: rgba(0,0,0,0.5); margin-top: 10px;border: none;">节目献演</button>
+    </a>
+    <span style="color: rgba(0,0,0,0.5);margin-top: -5px;">|</span>
+    <a href="">
+        <button style="width: 110px;background: rgba(0,0,0,0); color: rgba(0,0,0,0.5);margin-top: 10px;border: none;">敬拜赞美</button>
+    </a>
+    <span style="color: rgba(0,0,0,0.5);margin-top: -5px;">|</span>
+    <a href="audio_list.html?page=fortyday&tag=2021">
+        <button style="width: 110px;background: rgba(0,0,0,0);color: rgba(0,0,0,0.5); margin-top: 10px;border: none;">其他</button>
+    </a>
+</div>
+
+<div>
+	<div class="list-img-suit" id="imgList">
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证1.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证1.png" class="item-img" alt="">
+			<span class="video-title">祷告! 经历美好-- 杨姊妹</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证2.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证2.png" class="item-img" alt="">
+			<span class="video-title">化了妆的祝福 -- 稽弟兄夫妻</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证3.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证3.png" class="item-img" alt="">
+			<span class="video-title">在爱中服侍神、服侍人 -- 王弟兄夫妻</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证4.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证4.png" class="item-img" alt="">
+			<span class="video-title">主带领我们重新起航 -- 陈弟兄父子</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证5.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证5.png" class="item-img" alt="">
+			<span class="video-title">经历考验经历成长 -- 张姊妹</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证6.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证6.png" class="item-img" alt="">
+			<span class="video-title">我的心在哪里财宝也在哪里</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证7.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证7.png" class="item-img" alt="">
+			<span class="video-title">得恩典得成长</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证8.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证8.png" class="item-img" alt="">
+			<span class="video-title">一切好处不在主以外</span>
+		</a>
+
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证9.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证9.png" class="item-img" alt="">
+			<span class="video-title">受你管教蒙你的爱</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证10.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证10.png" class="item-img" alt="">
+			<span class="video-title">我的日子你早已看见</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证11.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证11.png" class="item-img" alt="">
+			<span class="video-title">不可叫人小看你年轻</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证12.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证12.png" class="item-img" alt="">
+			<span class="video-title">重获父爱</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证13.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证13.png" class="item-img" alt="">
+			<span class="video-title">信耶稣得新生命</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证14.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证14.png" class="item-img" alt="">
+			<span class="video-title">主是我云上的太阳</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证15.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证15.png" class="item-img" alt="">
+			<span class="video-title">兴起为主做工</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证16.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证16.png" class="item-img" alt="">
+			<span class="video-title">切慕你的话语</span>
+		</a>
+		<a class="item" onclick="openVideo('https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证17.mp4')">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/见证17.png" class="item-img" alt="">
+			<span class="video-title">苦境中的信心和盼望</span>
+		</a>
+
+		<a class="item" href="video_list.html?page=witness&tag=family">
+			<img src="https://bhhz.oss-cn-shanghai.aliyuncs.com/见证/婚姻家庭系列/婚姻.jpg" class="item-img"/>
+			<span class="video-title">婚姻家庭系列</span>
+			<span class="video-date">.</span>
+		</a>
+	</div>
+</div>
+
+<script>
+    // 当页面载入完毕后执行，注：为了能正常获取到img尺寸的写法
+    window.onload = function () {
+        var id = 'imgList' // 模块id
+        boxImgSuit(id)
+    };
+
+    // 图片自适应盒子，参数为列表id
+    function boxImgSuit(id) {
+        var img = document.getElementById(id).getElementsByClassName('item') // 获取doc
+        for (var i = 0; i < img.length; i++) {
+            var imgHtml = img[i].getElementsByClassName('item-img')[0] // 获取到图片
+            var imgHeight = imgHtml.height // 获取到图片高度
+            var imgWidth = imgHtml.width // 获取图片宽度
+            img[i].style.height = img[i].offsetWidth + 'px' // 配置盒子高度
+            var itemHeight = img[i].offsetHeight // 获取图片盒子的高度
+            var itemWidth = img[i].offsetWidth // 获取图片盒子宽度
+
+            if (imgWidth > imgHeight) { // 判断图片宽度是否大于高度
+                imgHtml.height = itemHeight // 给图片高度 100%
+            } else if (imgWidth < imgHeight) { // 判断图片宽度是否小于高度
+                imgHtml.width = itemWidth // 给图片宽度 100%
+            } else { // 图片是正方形
+                imgHtml.height = itemHeight // 给图片高度 100%
+                imgHtml.width = itemWidth // 给图片宽度 100%
+            }
+        }
+        // 监听窗口变化
+        window.onresize = function () {
+            boxImgSuit(id)
+        }
+    }
+
+    function openVideo(src) {
+        var page = window.open();
+        var html = "<body style='background:black'> <div style='width:100%; height: 100%;'> <video controls controlslist='nodownload' width='100%' height='100%' autoplay src='" + src + "'></video></div></body>"
+        page.document.write(html);
+    }
+
+</script>
+</body>
+</html>

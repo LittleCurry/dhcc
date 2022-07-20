@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%">
+
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>当天视频</title>
+</head>
+
+
+<body style="height: 100%; width: 100%">
+
+<div class="grid-item grid-sizer identity photography"
+     style="width: 100%; height: 100%; display: flex;align-items: center; justify-content: center;"
+     onclick="openVideo()">
+    <img style="width: 70%; height: 70%; position: relative"
+         src="res/cover.jpg"
+         alt=""/>
+    <img style="width: 200px; height: 200px; position: absolute; top: calc(50% - 100px); left: calc(50% - 100px); z-index: 2;"
+         src="res/play.png"
+         alt=""/>
+</div>
+
+<script type="text/javascript">
+
+    function getWeekDay() {
+        let date = new Date();
+        let nowTime = date.getTime();
+        let week = date.getDay();
+        let dayLeng = 24 * 60 * 60 * 1000;
+        let furtureSundayTimes = nowTime + (7 - week) * dayLeng;
+        if (week <= 0) {
+            // 当week == 0时, 代表今天是周日, 按上面的算法会算成下周日
+            furtureSundayTimes = nowTime;
+        }
+        furtureSundayTimes = new Date(furtureSundayTimes);
+        let sunYear = furtureSundayTimes.getFullYear() + '';
+        let sunMonth = furtureSundayTimes.getMonth() + 1;
+        let sunDay = furtureSundayTimes.getDate();
+        sunMonth = sunMonth >= 10 ? sunMonth : '0' + sunMonth;
+        sunDay = sunDay >= 10 ? sunDay : '0' + sunDay;
+        let sunday = sunYear + sunMonth + sunDay;
+        return sunday
+    }
+
+    function openVideo() {
+        // let src = "http://bhhz.net/file_server/file?file_name=" + getWeekDay() + ".mp4"
+        // let src = "res/" + getWeekDay() + ".mp4"
+        let src = "https://bhhz.s3.ap-northeast-1.amazonaws.com/live/" + getWeekDay() +".mp4"
+        src = "https://cvws.icloud-content.com/B/ASTU4e8LrIC5RY3dWqqtHT9NeFMHAa5Ngy0ccqq3gcfrHkzV3ikzQukZ/%E6%9D%8E%E4%BA%91%E9%B9%8F+2022-04-04+01.19.28.mp4?o=Ana-w-BfZRi7me4yvTGZVw2csE_-Vt2TqHrFM65S2CuL&v=1&x=3&a=CAog_1h9n2KF5HeM0O4KVQZIKMYf3Q9eFXy-ttpWTtsxUPASbRCjoO-x_i8Yw5emsv4vIgEAUgRNeFMHWgQzQukZaiaz7SIuRA7q-2P6X9JsS3PJzt8kHe-gn0ReSk1j05jimGOWZ4c1HXImYGgc_XEpD5RXjNmcuDKhaugM8U6N-os9DbEjH0zi4iPbII_kg_o&e=1648836053&fl=&r=03195be3-4f4a-4d8a-9696-071dc26bf3b4-1&k=gAcNheYadSWJ9bLEaeOcZg&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=43&s=pxjH22BNomLRKL6Gt6Oo-LxN5Nc"
+	console.log('src:', src)
+        var page = window.open();
+        var html = "<body style='background:black'> <div style='width:100%; height: 100%;'> <video controls controlslist='nodownload' width='100%' height='100%' autoplay src='" + src + "'></video></div></body>"
+        page.document.write(html);
+    }
+
+</script>
+</body>
+
+
+</html>
